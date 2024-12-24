@@ -1,0 +1,11 @@
+como seria en archivo final de estas librerias para programar en platformio.ini
+
+lib_deps = adafruit/DHT sensor library
+
+lib_deps = adafruit/Adafruit BME280 Library
+
+lib_deps = eMette/MPU6050
+
+lib_deps =  johnnyb/NewPing
+
+lib_deps = Claws/BH1750

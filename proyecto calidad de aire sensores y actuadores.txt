@@ -1,0 +1,16 @@
+sensores
+ML 8511
+BH1570
+AHT25
+BMP280
+MQ135
+
+VISUALIZADORES 
+Dsiplay LCD 2X16 12c
+
+pulsadores de entrada 
+Tres entradas  TOUCH dedicadas del ESP32
+
+ACTUADORES
+tire LED WS2812
+La bomba de agua sumergible 
