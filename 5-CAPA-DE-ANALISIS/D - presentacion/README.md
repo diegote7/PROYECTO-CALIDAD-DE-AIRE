@@ -1,7 +1,12 @@
-# Capa de Percepción - Proyecto IoT sobre Calidad del Aire
+# Capa de Análisis - Proyecto IoT sobre Calidad del Aire
 
-Este repositorio está dedicado a la **capa de percepción**, la primera fase de nuestro proyecto IoT orientado a monitorear la calidad del aire. Aquí es donde damos inicio a nuestro proyecto, centrado en recolectar datos ambientales esenciales para mejorar la calidad de vida y proteger el medio ambiente.
+Este repositorio está dedicado a la **capa de análisis** de nuestro proyecto IoT sobre la calidad del aire. Aquí se desarrolla la lógica de análisis de los datos recolectados y almacenados, permitiendo extraer información útil para la toma de decisiones.
 
-En este directorio encontrarás toda la información relacionada con la **capa de percepción**, incluyendo la selección de sensores, microcontroladores, y las estrategias para integrar estos sensores dentro de la arquitectura IoT que estamos construyendo.
+En este directorio encontrarás recursos y documentación sobre:
 
+- **API RESTful con Flask**, que facilita la interacción con los datos almacenados a través de consultas y operaciones CRUD.
+- **MySQL**, para la gestión de las bases de datos y las consultas necesarias para extraer los datos recolectados por nuestros dispositivos IoT.
+- **Consultas CRUD**, esenciales para la manipulación y análisis de los datos, incluyendo la creación, lectura, actualización y eliminación de registros.
+
+La capa de análisis es crítica para transformar los datos en información procesable, proporcionando las bases para generar alertas, reportes y otras funcionalidades basadas en los datos del sistema.
 

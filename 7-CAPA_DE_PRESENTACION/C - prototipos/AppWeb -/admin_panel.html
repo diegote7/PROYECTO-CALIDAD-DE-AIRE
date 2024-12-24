@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="css/css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado con Navegación -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Panel de Administración</h1>
+            <nav class="nav-links">
+                <a href="index.html" class="btn">Inicio</a>
+                <a href="user_panel.html" class="btn">Usuario</a>
+                <a href="admin_panel.html" class="btn">Administración</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+        <!-- Sección de Gestión de Usuarios -->
+        <section class="admin-card">
+            <h2>Gestión de Usuarios</h2>
+            <button class="btn-action">Agregar Usuario</button>
+            <button class="btn-action">Eliminar Usuario</button>
+        </section>
+
+        <!-- Sección de Gestión de Sensores -->
+        <section class="admin-card">
+            <h2>Gestión de Sensores</h2>
+            <button class="btn-action">Agregar Sensor</button>
+            <button class="btn-action">Eliminar Sensor</button>
+        </section>
+
+        <!-- Sección de Visualización de Datos -->
+        <section class="admin-card">
+            <h2>Visualización de Datos</h2>
+            <p>Selecciona un sensor para ver detalles:</p>
+            <select class="sensor-select">
+                <option>Sensor 1</option>
+                <option>Sensor 2</option>
+                <option>Sensor 3</option>
+                <option>Sensor 4</option>
+                <option>Sensor 5</option>
+            </select>
+            <button class="btn-action">Ver Detalles</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Plataforma IoT para Monitoreo de Calidad del Aire</p>
+            <nav class="footer-links">
+                <a href="nosotrosAbout.html" class="btn">Sobre Nosotros</a>
+            </nav>
+            <div class="social-icons">
+                <a href="https://github.com/ISPC-TST-PI-I-2024/capa-de-presentacion-grupo-Plata.git" target="_blank">
+                    <img src="assets/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.ispc.edu.ar/" target="_blank">
+                    <img src="assets/ispc.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/js/main.js"></script>
+</body>
+</html>

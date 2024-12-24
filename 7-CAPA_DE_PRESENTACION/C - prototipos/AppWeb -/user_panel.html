@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario</title>
+    <link rel="stylesheet" href="css/css/styles.css">
+</head>
+<body>
+
+    <!-- Header con Barra de Navegación -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Panel de Usuario</h1>
+            <nav class="nav-links">
+                <a href="perfilUser.html" class="btn">Perfil</a>
+                <a href="index.html" class="btn">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+        <section class="user-info">
+            <h2>Bienvenido, <span id="user-name">nombre del usuario</span>!</h2>
+            <p>Aquí puedes monitorear tus datos y personalizar tus alertas.</p>
+        </section>
+
+        <!-- Tarjetas de Datos Ambientales -->
+        <section class="data-container">
+            <div class="info-box">
+                <img src="/assets/airqlty.png" alt="MQ135 - Calidad del Aire" class="info-icon">
+                <h2>Calidad del Aire (MQ135)</h2>
+                <p id="aqi">Concentración de gases: 250 ppm</p>
+            </div>
+            <div class="info-box">
+                <img src="/assets/uv.png" alt="UV" class="info-icon">
+                <h2>Nivel UV (ML8511)</h2>
+                <p id="uv">2.5 mW/cm²</p>
+            </div>
+            <div class="info-box">
+                <img src="/assets/light.png" alt="Luz" class="info-icon">
+                <h2>Intensidad Lumínica (BH1750)</h2>
+                <p id="light">350 lux</p>
+            </div>
+            <div class="info-box">
+                <img src="/assets/pressure.png" alt="Presión" class="info-icon">
+                <h2>Presión Atmosférica (BMP280)</h2>
+                <p id="pressure">1013 hPa</p>
+            </div>
+            <div class="info-box">
+                <img src="/assets/high-temperature.png" alt="Temperatura" class="info-icon">
+                <h2>Temperatura (AM2320)</h2>
+                <p id="temperature">22°C</p>
+            </div>
+            <div class="info-box">
+                <img src="/assets/humidity.png" alt="Humedad" class="info-icon">
+                <h2>Humedad (AM2320)</h2>
+                <p id="humidity">45%</p>
+            </div>
+        </section>
+
+        <!-- Formulario de Configuración de Alertas -->
+        <section class="content">
+            <h2>Configuración de Alertas</h2>
+            <form id="alert-settings" class="alert-form">
+                <div class="form-group">
+                    <label for="mq135-threshold">Umbral Calidad del Aire (ppm):</label>
+                    <input type="number" id="mq135-threshold" name="mq135-threshold" value="300" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="uv-threshold">Umbral Nivel UV (mW/cm²):</label>
+                    <input type="number" id="uv-threshold" name="uv-threshold" value="3" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="light-threshold">Umbral Intensidad Lumínica (lux):</label>
+                    <input type="number" id="light-threshold" name="light-threshold" value="500" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="pressure-threshold">Umbral Presión Atmosférica (hPa):</label>
+                    <input type="number" id="pressure-threshold" name="pressure-threshold" value="1020" min="0">
+                </div>
+                <button type="submit" class="btn-save">Guardar Configuración</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Plataforma IoT para Monitoreo de Calidad del Aire</p>
+            <nav class="footer-links">
+                <a href="nosotrosAbout.html" class="btn">Sobre Nosotros</a>
+            </nav>
+            <div class="social-icons">
+                <a href="https://github.com/ISPC-TST-PI-I-2024/capa-de-presentacion-grupo-Plata.git" target="_blank">
+                    <img src="assets/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.ispc.edu.ar/" target="_blank">
+                    <img src="assets/ispc.png" alt="ISPC">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Externos -->
+    <script src="js/js/sensorController.js"></script>
+    <script src="js/js/alertController.js"></script>
+</body>
+</html>
