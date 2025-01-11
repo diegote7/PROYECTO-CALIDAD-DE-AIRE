@@ -1,6 +1,6 @@
 # PROYECTO CALIDAD DE AIRE
 
-[![descarga.jpg](https://i.postimg.cc/qRdTRtXs/descarga.jpg)](https://postimg.cc/Mct43pLH)
+[![Designer-7.jpg](https://i.postimg.cc/JtwXG50r/Designer-7.jpg)](https://postimg.cc/wRVMrJDZ) 
 
 Descripcion: 
 
